@@ -1,0 +1,5 @@
+<map id="src/init_points_pixels.h" name="src/init_points_pixels.h">
+<area shape="rect" id="node1" title="Fichier de déclaration des fonctions utilisée pour initialiser les points et pixels." alt="" coords="99,5,269,32"/>
+<area shape="rect" id="node2" href="$init__points__pixels_8cpp.html" title="Fichier d&#39;implémentation des fonctions utilisée pour initialiser les points et pixels." alt="" coords="5,80,192,107"/>
+<area shape="rect" id="node3" href="$main_8cpp.html" title="Fichier principale qui organise et lance les différentes fonctions. Il génère un rendu du MNT passer ..." alt="" coords="217,80,322,107"/>
+</map>

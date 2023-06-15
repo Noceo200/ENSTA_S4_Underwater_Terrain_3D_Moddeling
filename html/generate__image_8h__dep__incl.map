@@ -1,0 +1,5 @@
+<map id="src/generate_image.h" name="src/generate_image.h">
+<area shape="rect" id="node1" title="Fichier de déclaration des fonctions utilisées pour générer une image bianire en couleur." alt="" coords="96,5,259,32"/>
+<area shape="rect" id="node2" href="$generate__image_8cpp.html" title="Fichier d&#39;implémentation des fonctions utilisées pour générer une image binaire en couleur." alt="" coords="5,80,184,107"/>
+<area shape="rect" id="node3" href="$main_8cpp.html" title="Fichier principale qui organise et lance les différentes fonctions. Il génère un rendu du MNT passer ..." alt="" coords="209,80,314,107"/>
+</map>

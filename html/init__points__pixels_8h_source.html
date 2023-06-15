@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Create_raster:  Fichier source de src/init_points_pixels.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Create_raster
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">init_points_pixels.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="init__points__pixels_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;cstdlib&gt;</span> <span class="comment">// bibliothèque générique standard</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span> <span class="comment">// bibliothèque d’entrées/sorties</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;unistd.h&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span> <span class="comment">//vecteur</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span> <span class="comment">//dictionnaires</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="struct__point_8h.html">struct_point.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef INIT_POINT_PIXEL_H</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define INIT_POINT_PIXEL_H</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keywordtype">void</span> <a class="code" href="init__points__pixels_8cpp.html#a47278542efb31ba6ae8644e77affa3bb">create_pixels</a>(std::vector&lt;int&gt; &amp;pixels, std::vector&lt;double&gt; &amp;pixels_illumination, std::map&lt;std::string,double&gt; &amp;context);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keywordtype">void</span> <a class="code" href="init__points__pixels_8cpp.html#a42b557ad5d0c98d0818c52e70835c709">get_point</a>(<a class="code" href="structpoint.html">point</a>&amp; p,std::string&amp; str);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keywordtype">int</span> <a class="code" href="init__points__pixels_8cpp.html#af2890ac6b33602a7026e581dfb6bb2a1">get_points</a>(std::string file_name,std::vector&lt;point&gt; *v);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keywordtype">void</span> <a class="code" href="init__points__pixels_8cpp.html#a067ea5469c240fea0e7cac8ff8b94da9">project_points</a>(std::vector&lt;point&gt; *v, std::vector&lt;double&gt; &amp;points_line, std::map&lt;std::string,double&gt; &amp;context);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="astruct__point_8h_html"><div class="ttname"><a href="struct__point_8h.html">struct_point.h</a></div><div class="ttdoc">Fichier de déclaration de la structure d'un point.</div></div>
+<div class="ttc" id="ainit__points__pixels_8cpp_html_a42b557ad5d0c98d0818c52e70835c709"><div class="ttname"><a href="init__points__pixels_8cpp.html#a42b557ad5d0c98d0818c52e70835c709">get_point</a></div><div class="ttdeci">void get_point(point &amp;p, string &amp;str)</div><div class="ttdef"><b>Definition:</b> init_points_pixels.cpp:229</div></div>
+<div class="ttc" id="ainit__points__pixels_8cpp_html_af2890ac6b33602a7026e581dfb6bb2a1"><div class="ttname"><a href="init__points__pixels_8cpp.html#af2890ac6b33602a7026e581dfb6bb2a1">get_points</a></div><div class="ttdeci">int get_points(string file_name, vector&lt; point &gt; *v)</div><div class="ttdef"><b>Definition:</b> init_points_pixels.cpp:185</div></div>
+<div class="ttc" id="ainit__points__pixels_8cpp_html_a067ea5469c240fea0e7cac8ff8b94da9"><div class="ttname"><a href="init__points__pixels_8cpp.html#a067ea5469c240fea0e7cac8ff8b94da9">project_points</a></div><div class="ttdeci">void project_points(vector&lt; point &gt; *v, vector&lt; double &gt; &amp;points_line, map&lt; string, double &gt; &amp;context)</div><div class="ttdef"><b>Definition:</b> init_points_pixels.cpp:90</div></div>
+<div class="ttc" id="ainit__points__pixels_8cpp_html_a47278542efb31ba6ae8644e77affa3bb"><div class="ttname"><a href="init__points__pixels_8cpp.html#a47278542efb31ba6ae8644e77affa3bb">create_pixels</a></div><div class="ttdeci">void create_pixels(vector&lt; int &gt; &amp;pixels, vector&lt; double &gt; &amp;pixels_illumination, map&lt; string, double &gt; &amp;context)</div><div class="ttdef"><b>Definition:</b> init_points_pixels.cpp:23</div></div>
+<div class="ttc" id="astructpoint_html"><div class="ttname"><a href="structpoint.html">point</a></div><div class="ttdef"><b>Definition:</b> struct_point.h:11</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

@@ -1,0 +1,293 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Create_raster: Référence du fichier src/init_points_pixels.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Create_raster
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier init_points_pixels.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Fichier d'implémentation des fonctions utilisée pour initialiser les points et pixels.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &lt;cstdlib&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;unistd.h&gt;</code><br />
+<code>#include &lt;fstream&gt;</code><br />
+<code>#include &lt;iomanip&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;map&gt;</code><br />
+<code>#include &lt;proj.h&gt;</code><br />
+<code>#include &lt;math.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="struct__point_8h_source.html">struct_point.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="init__points__pixels_8h_source.html">init_points_pixels.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Graphe des dépendances par inclusion de init_points_pixels.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="init__points__pixels_8cpp__incl.png" border="0" usemap="#src_2init__points__pixels_8cpp" alt=""/></div>
+<map name="src_2init__points__pixels_8cpp" id="src_2init__points__pixels_8cpp">
+<area shape="rect" title="Fichier d&#39;implémentation des fonctions utilisée pour initialiser les points et pixels." alt="" coords="383,5,570,32"/>
+<area shape="rect" title=" " alt="" coords="5,155,71,181"/>
+<area shape="rect" title=" " alt="" coords="95,155,175,181"/>
+<area shape="rect" title=" " alt="" coords="199,155,258,181"/>
+<area shape="rect" title=" " alt="" coords="282,155,357,181"/>
+<area shape="rect" title=" " alt="" coords="591,80,664,107"/>
+<area shape="rect" title=" " alt="" coords="689,80,763,107"/>
+<area shape="rect" title=" " alt="" coords="381,155,444,181"/>
+<area shape="rect" title=" " alt="" coords="469,155,519,181"/>
+<area shape="rect" title=" " alt="" coords="787,80,846,107"/>
+<area shape="rect" title=" " alt="" coords="871,80,939,107"/>
+<area shape="rect" href="struct__point_8h.html" title="Fichier de déclaration de la structure d&#39;un point." alt="" coords="544,155,655,181"/>
+<area shape="rect" href="init__points__pixels_8h.html" title="Fichier de déclaration des fonctions utilisée pour initialiser les points et pixels." alt="" coords="215,80,363,107"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:a47278542efb31ba6ae8644e77affa3bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="init__points__pixels_8cpp.html#a47278542efb31ba6ae8644e77affa3bb">create_pixels</a> (vector&lt; int &gt; &amp;pixels, vector&lt; double &gt; &amp;pixels_illumination, map&lt; string, double &gt; &amp;context)</td></tr>
+<tr class="separator:a47278542efb31ba6ae8644e77affa3bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a067ea5469c240fea0e7cac8ff8b94da9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="init__points__pixels_8cpp.html#a067ea5469c240fea0e7cac8ff8b94da9">project_points</a> (vector&lt; <a class="el" href="structpoint.html">point</a> &gt; *v, vector&lt; double &gt; &amp;points_line, map&lt; string, double &gt; &amp;context)</td></tr>
+<tr class="separator:a067ea5469c240fea0e7cac8ff8b94da9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2890ac6b33602a7026e581dfb6bb2a1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="init__points__pixels_8cpp.html#af2890ac6b33602a7026e581dfb6bb2a1">get_points</a> (string file_name, vector&lt; <a class="el" href="structpoint.html">point</a> &gt; *v)</td></tr>
+<tr class="separator:af2890ac6b33602a7026e581dfb6bb2a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42b557ad5d0c98d0818c52e70835c709"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="init__points__pixels_8cpp.html#a42b557ad5d0c98d0818c52e70835c709">get_point</a> (<a class="el" href="structpoint.html">point</a> &amp;p, string &amp;str)</td></tr>
+<tr class="separator:a42b557ad5d0c98d0818c52e70835c709"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Fichier d'implémentation des fonctions utilisée pour initialiser les points et pixels. </p>
+<dl class="section date"><dt>Date</dt><dd>04/01/2022 </dd></dl>
+<dl class="section author"><dt>Auteur</dt><dd>NOEL Océan </dd></dl>
+</div><h2 class="groupheader">Documentation des fonctions</h2>
+<a id="a47278542efb31ba6ae8644e77affa3bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47278542efb31ba6ae8644e77affa3bb">&#9670;&nbsp;</a></span>create_pixels()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void create_pixels </td>
+          <td>(</td>
+          <td class="paramtype">vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>pixels</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>pixels_illumination</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">map&lt; string, double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>context</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Cette fonction créer les pixels qui vont quadriller le nuage de points donner en paramètre. De plus elle ajoute à la variable context les infos importantes telles que la largeur et la hauteur en m d'un pixel. </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pixels</td><td>Vecteur dans lequel initialiser la couleur de nos pixels. </td></tr>
+    <tr><td class="paramname">pixels_illumination</td><td>Vecteur dans lequel intialiser les illuminations des pixels (0 = non illuminé, 1 = illuminé au maximum). </td></tr>
+    <tr><td class="paramname">context</td><td>Dictionnaire qui contient les données importantes (evite les variables globales). Ici cette fonction à besoin de :<ul>
+<li>valeurs limites des positions des points (min_x,min_y,max_x,max_y)</li>
+<li>nombre de pixels voulus (width,height)</li>
+<li>couleur par défaut des pixels (default_color)</li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a42b557ad5d0c98d0818c52e70835c709"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42b557ad5d0c98d0818c52e70835c709">&#9670;&nbsp;</a></span>get_point()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void get_point </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structpoint.html">point</a> &amp;&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>str</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Stocke les données txt d'un point dans une structure point. </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p</td><td>point dans lequel sauvegarder les données. </td></tr>
+    <tr><td class="paramname">str</td><td>données textuelles du point.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af2890ac6b33602a7026e581dfb6bb2a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2890ac6b33602a7026e581dfb6bb2a1">&#9670;&nbsp;</a></span>get_points()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int get_points </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>file_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; <a class="el" href="structpoint.html">point</a> &gt; *&#160;</td>
+          <td class="paramname"><em>v</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Lis une liste de données de points au format .txt et les stock sous forme de vecteur de point. </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file_name</td><td>nom du fichier dans lequel se trouve les données textuelles. </td></tr>
+    <tr><td class="paramname">v</td><td>vecteur dans lequel sauvegarder les points récupérés.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a067ea5469c240fea0e7cac8ff8b94da9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a067ea5469c240fea0e7cac8ff8b94da9">&#9670;&nbsp;</a></span>project_points()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void project_points </td>
+          <td>(</td>
+          <td class="paramtype">vector&lt; <a class="el" href="structpoint.html">point</a> &gt; *&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>points_line</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">map&lt; string, double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>context</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Cette fonction transforme les coordonnées géographique d'une liste de point en coordonnées planaire, c'est une projection Lambert93. De plus elle initialise plusieurs paramètres important de "context" telle que les limites du nuage de points. </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">v</td><td>Vecteur dans lequel se trouve les points en coordonnées géographique. </td></tr>
+    <tr><td class="paramname">points_line</td><td>Vecteur dans lequel se trouve les points en coordonnées géographique sous forme {x0,y0,x1,y1...}. </td></tr>
+    <tr><td class="paramname">context</td><td>Dictionnaire qui contient les données importantes (evite les variables globales). Ici cette fonction en à besoin pour initialiser certaines des valeurs.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

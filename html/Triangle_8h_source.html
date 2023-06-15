@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Create_raster:  Fichier source de src/Triangle.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Create_raster
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Triangle.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Triangle_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="struct__point_8h.html">struct_point.h</a>&quot;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef OBJ_TRIANGLE_H</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define OBJ_TRIANGLE_H</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classTriangle.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="classTriangle.html">Triangle</a></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="classTriangle.html#a866d7177cc88e312cc71d2a1b46df921">Triangle</a>(<a class="code" href="structpoint.html">point</a>* p1,<a class="code" href="structpoint.html">point</a>* p2,<a class="code" href="structpoint.html">point</a>* p3);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classTriangle.html#a0b3927683f0588b5b5a224178f5bc9e9">contain</a>(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="classTriangle.html#a0117259c24584140da7e6915f10807ec">compute_depth</a>(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classTriangle.html#ac41d4fe5e93ec486e0d69c20465b8762">compute_illumination</a>(std::vector&lt;double&gt; &amp;light_dir);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="structpoint.html">point</a>* p1;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="structpoint.html">point</a>* p2;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="structpoint.html">point</a>* p3;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">double</span> illumination = 1; <span class="comment">//illumination du triangle, initialement, il est totalement illuminé</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    std::vector&lt;double&gt; vn = {0,0,0}; <span class="comment">//vecteur normal du plan du triangle </span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;};</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="astruct__point_8h_html"><div class="ttname"><a href="struct__point_8h.html">struct_point.h</a></div><div class="ttdoc">Fichier de déclaration de la structure d'un point.</div></div>
+<div class="ttc" id="aclassTriangle_html_a0117259c24584140da7e6915f10807ec"><div class="ttname"><a href="classTriangle.html#a0117259c24584140da7e6915f10807ec">Triangle::compute_depth</a></div><div class="ttdeci">double compute_depth(double x, double y)</div><div class="ttdef"><b>Definition:</b> Triangle.cpp:73</div></div>
+<div class="ttc" id="aclassTriangle_html"><div class="ttname"><a href="classTriangle.html">Triangle</a></div><div class="ttdoc">Classe Triangle qui permet d'attribuer une profondeur aux pixels qui lui appartiennent.</div><div class="ttdef"><b>Definition:</b> Triangle.h:13</div></div>
+<div class="ttc" id="aclassTriangle_html_a0b3927683f0588b5b5a224178f5bc9e9"><div class="ttname"><a href="classTriangle.html#a0b3927683f0588b5b5a224178f5bc9e9">Triangle::contain</a></div><div class="ttdeci">bool contain(double x, double y)</div><div class="ttdef"><b>Definition:</b> Triangle.cpp:94</div></div>
+<div class="ttc" id="aclassTriangle_html_a866d7177cc88e312cc71d2a1b46df921"><div class="ttname"><a href="classTriangle.html#a866d7177cc88e312cc71d2a1b46df921">Triangle::Triangle</a></div><div class="ttdeci">Triangle(point *p1, point *p2, point *p3)</div><div class="ttdef"><b>Definition:</b> Triangle.cpp:20</div></div>
+<div class="ttc" id="astructpoint_html"><div class="ttname"><a href="structpoint.html">point</a></div><div class="ttdef"><b>Definition:</b> struct_point.h:11</div></div>
+<div class="ttc" id="aclassTriangle_html_ac41d4fe5e93ec486e0d69c20465b8762"><div class="ttname"><a href="classTriangle.html#ac41d4fe5e93ec486e0d69c20465b8762">Triangle::compute_illumination</a></div><div class="ttdeci">void compute_illumination(std::vector&lt; double &gt; &amp;light_dir)</div><div class="ttdef"><b>Definition:</b> Triangle.cpp:41</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

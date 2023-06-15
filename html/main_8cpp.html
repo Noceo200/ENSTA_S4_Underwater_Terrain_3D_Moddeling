@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Create_raster: Référence du fichier src/main.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Create_raster
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier main.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Fichier principale qui organise et lance les différentes fonctions. Il génère un rendu du MNT passer en arguments de dimensions données en arguments également. Le rendu généré est une image binaire en couleurs qui elle utilise la colormap Haxby.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &lt;cstdlib&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;unistd.h&gt;</code><br />
+<code>#include &lt;ctime&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;map&gt;</code><br />
+<code>#include &quot;<a class="el" href="triangulation_8h_source.html">triangulation.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="struct__point_8h_source.html">struct_point.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="init__points__pixels_8h_source.html">init_points_pixels.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="generate__image_8h_source.html">generate_image.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Graphe des dépendances par inclusion de main.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8cpp__incl.png" border="0" usemap="#src_2main_8cpp" alt=""/></div>
+<map name="src_2main_8cpp" id="src_2main_8cpp">
+<area shape="rect" title="Fichier principale qui organise et lance les différentes fonctions. Il génère un rendu du MNT passer ..." alt="" coords="328,5,434,32"/>
+<area shape="rect" title=" " alt="" coords="274,155,339,181"/>
+<area shape="rect" title=" " alt="" coords="36,155,116,181"/>
+<area shape="rect" title=" " alt="" coords="140,155,198,181"/>
+<area shape="rect" title=" " alt="" coords="364,155,438,181"/>
+<area shape="rect" title=" " alt="" coords="462,155,521,181"/>
+<area shape="rect" title=" " alt="" coords="546,155,608,181"/>
+<area shape="rect" title=" " alt="" coords="633,155,684,181"/>
+<area shape="rect" href="triangulation_8h.html" title="Fichier de déclaration des fonctions utilisées pour la triangulation." alt="" coords="685,80,802,107"/>
+<area shape="rect" href="struct__point_8h.html" title="Fichier de déclaration de la structure d&#39;un point." alt="" coords="438,229,548,256"/>
+<area shape="rect" href="init__points__pixels_8h.html" title="Fichier de déclaration des fonctions utilisée pour initialiser les points et pixels." alt="" coords="195,80,343,107"/>
+<area shape="rect" href="generate__image_8h.html" title="Fichier de déclaration des fonctions utilisées pour générer une image bianire en couleur." alt="" coords="470,80,610,107"/>
+<area shape="rect" href="Triangle_8h.html" title="Fichier de déclaration de la classe Triangle." alt="" coords="708,155,795,181"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:a0ddf1224851353fc92bfbff6f499fa97"><td class="memItemLeft" align="right" valign="top"><a id="a0ddf1224851353fc92bfbff6f499fa97"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>main</b> (int argc, char *argv[])</td></tr>
+<tr class="separator:a0ddf1224851353fc92bfbff6f499fa97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Fichier principale qui organise et lance les différentes fonctions. Il génère un rendu du MNT passer en arguments de dimensions données en arguments également. Le rendu généré est une image binaire en couleurs qui elle utilise la colormap Haxby. </p>
+<dl class="section date"><dt>Date</dt><dd>04/01/2022 </dd></dl>
+<dl class="section author"><dt>Auteur</dt><dd>NOEL Océan </dd></dl>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

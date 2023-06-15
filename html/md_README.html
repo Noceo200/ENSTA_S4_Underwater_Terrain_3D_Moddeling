@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Create_raster: README</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Create_raster
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="PageDoc"><div class="header">
+  <div class="headertitle">
+<div class="title">README </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p>Projet C++, NOEL Océan ROB24, 04/01/2022.</p>
+<p>//////////////////// ////PRESENTATION//// ////////////////////</p>
+<p>Ce projet génère une image binaire en couleur des fonds marins à partir d'un fichier de relevés. La structure des relevés doit être similaire à celle des fichiers .txt donnés avec ce projet dans le dossier "assets/". Les caractéristiques du programme sont les suivantes :</p><ul>
+<li>L'image est générée en binaire.</li>
+<li>L'image est généré en couleur.</li>
+<li>Le projet est compilé avec Cmake.</li>
+<li>La projection utilisée est celle de LAMBERT93.</li>
+<li>Les entrées du programme sont le chemin vers le fichier de données et la largeur de l'image à générée.</li>
+<li>Les contours du MNT sont proprement rendus (même pour des enveloppes non convexes).</li>
+<li>Une documentation HTML à été réalisée et est accessible via le fichier html/index.html.</li>
+<li>Un algorithme d'optimisation pour la recherche des triangles à été implémenté.</li>
+<li>L'image est générée avec des ombres</li>
+</ul>
+<p>Le repertoire du projet est organisé de la manière suivante :</p><ul>
+<li>assets : Fichiers utilisés ou générés par le projet. (les relevés doivent être placés ici et l'image généré sera aussi placée dan sce repertoire)</li>
+<li>html : Documentation HTML du projet. (Visualisable en lancant index.html)</li>
+<li>include : Librairies ou fichier extérieurs au projet. (pas besoin de les installer)</li>
+<li>src : Codes sources.</li>
+</ul>
+<p>//////////////////// ////QUICK START///// ////////////////////</p>
+<p>Des fichiers bash on été créé pour faciliter la compilation et le lancement du programme :</p>
+<p>"bash initialize_cmake.sh" : Initialisation et Cmake et création du dossier build. "bash build.sh" : Compilation du projet. "bash build_n_launch.sh 'fichier.txt' 'width'" : Compilation et lancement du programme avec les paramètres détaillés ci-dessous.</p>
+<p>Détail des arguments :</p><ul>
+<li>fichier.txt --&gt; nom du fichier .txt qui contient les mesures.</li>
+<li>width --&gt; largeur en pixel de l'image à générer.</li>
+</ul>
+<p>//////////////////// ////DEPENDANCES///// ////////////////////</p>
+<p>Les librairies suivantes sont à installer pour que le projet fonctionne : *proj.h : "sudo apt-get install proj-dev" ou "sudo apt-get install libproj-dev"</p>
+<p>////////////////////////////// ////COMPILATION AVEC CMAKE//// //////////////////////////////</p>
+<p>Pour mettre en place la structure Cmake du projet avant la compilation, et créer le dossier build ou sera l'executabe, il faut executer la commande suivante à la racine :</p>
+<p>"bash initialize_cmake.sh"</p>
+<p>Un dossier build devrait apparaitre.</p>
+<p>Ensuite, pour compiler le projet avec Cmake il faut executer la commande suivante à la racine :</p>
+<p>"bash build.sh"</p>
+<p>/////////////////////////////////////////// ////LANCEMENT (si utilisation de CMAKE)//// ///////////////////////////////////////////</p>
+<p>Pour compiler et lancer le programme, un fichier bash à également été créé, la commande suivante permet de le lancer :</p>
+<p>"bash build_n_launch.sh 'fichier.txt' 'width'"</p>
+<p>Détail des arguments :</p><ul>
+<li>fichier.txt --&gt; nom du fichier .txt qui contient les mesures.</li>
+<li>width --&gt; largeur en pixel de l'image à générer.</li>
+</ul>
+<p>Ce fichier bash réalise plusieurs actions : 1 - Compilation du projet (Un executable est généré dans le dossier "build") 2 - Lancement du programme (une image .ppm est généré dans le dossier "build") 3 - Déplacement de l'image .ppm dans le dossier "assets" de la racine du projet 4 - Ouverture de l'image avec "xdg-open"</p>
+<p>Le résultat visuel devrait apparaitre si xdg est installé sur votre PC. Autrement, vous pouvez ouvrir l'image manuellement dans le dossier "assets/" à la racine du projet.</p>
+<p>Sinon, une fois l'executable créé dans le dossier build, il est possible de le lancer via cette commande à éxécuter dans "build" :</p>
+<p>"./create_raster 'fichier.txt' 'width'" avec les même arguments détaillés ci-dessus.</p>
+<p>Dans ce cas, l'image générée se trouvera dans le dossier 'build'.</p>
+<p>/////////////////////////////////////////// ////COMPILATION ET LANCEMENT SANS CMAKE//// ///////////////////////////////////////////</p>
+<p>Il possible de compiler et lancer le programme sans Cmake, pour cela voilà les étapes : 1 - Compiler le fichier "src/main.cpp" avec le compilateur de votre choix. 2 - Garder l'executable dans le dossier "src" et le lancer avec 2 arguments : "Nom du fichier .txt contenant les relevés" et "Largeur de l'image à générer en pixels" 3 - Ouvrir l'image .ppm qui à été générée dans le dossier "src" </p>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

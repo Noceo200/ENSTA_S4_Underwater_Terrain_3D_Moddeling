@@ -1,0 +1,205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Create_raster: Référence du fichier src/generate_image.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Create_raster
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier generate_image.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Fichier d'implémentation des fonctions utilisées pour générer une image binaire en couleur.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &lt;string&gt;</code><br />
+<code>#include &lt;unistd.h&gt;</code><br />
+<code>#include &lt;ctime&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;map&gt;</code><br />
+<code>#include &lt;fstream&gt;</code><br />
+<code>#include &lt;vtkSmartPointer.h&gt;</code><br />
+<code>#include &lt;vtkColorTransferFunction.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="generate__image_8h_source.html">generate_image.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Graphe des dépendances par inclusion de generate_image.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="generate__image_8cpp__incl.png" border="0" usemap="#src_2generate__image_8cpp" alt=""/></div>
+<map name="src_2generate__image_8cpp" id="src_2generate__image_8cpp">
+<area shape="rect" title="Fichier d&#39;implémentation des fonctions utilisées pour générer une image binaire en couleur." alt="" coords="253,5,432,32"/>
+<area shape="rect" title=" " alt="" coords="5,155,64,181"/>
+<area shape="rect" title=" " alt="" coords="93,155,168,181"/>
+<area shape="rect" title=" " alt="" coords="195,155,253,181"/>
+<area shape="rect" title=" " alt="" coords="279,155,342,181"/>
+<area shape="rect" title=" " alt="" coords="367,155,417,181"/>
+<area shape="rect" title=" " alt="" coords="431,80,505,107"/>
+<area shape="rect" title=" " alt="" coords="529,80,669,107"/>
+<area shape="rect" title=" " alt="" coords="693,80,891,107"/>
+<area shape="rect" href="generate__image_8h.html" title="Fichier de déclaration des fonctions utilisées pour générer une image bianire en couleur." alt="" coords="165,80,305,107"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:a388163ed1df45cc4987dad689c1ec1f8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="generate__image_8cpp.html#a388163ed1df45cc4987dad689c1ec1f8">generate_image</a> (vector&lt; int &gt; &amp;pixels, vector&lt; double &gt; &amp;pixels_illumination, map&lt; string, double &gt; &amp;context)</td></tr>
+<tr class="separator:a388163ed1df45cc4987dad689c1ec1f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac1291bce281e5795d6a1e016381a3ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="generate__image_8cpp.html#aac1291bce281e5795d6a1e016381a3ba">DarkenColor</a> (char &amp;color, double darken_percent)</td></tr>
+<tr class="separator:aac1291bce281e5795d6a1e016381a3ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Fichier d'implémentation des fonctions utilisées pour générer une image binaire en couleur. </p>
+<dl class="section date"><dt>Date</dt><dd>04/01/2022 </dd></dl>
+<dl class="section author"><dt>Auteur</dt><dd>NOEL Océan </dd></dl>
+</div><h2 class="groupheader">Documentation des fonctions</h2>
+<a id="aac1291bce281e5795d6a1e016381a3ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac1291bce281e5795d6a1e016381a3ba">&#9670;&nbsp;</a></span>DarkenColor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DarkenColor </td>
+          <td>(</td>
+          <td class="paramtype">char &amp;&#160;</td>
+          <td class="paramname"><em>color</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>darken_percent</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Cette fonction assombri une couleur de 1-darken_percent. </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">color</td><td>Vecteur qui contient la couleur à plus ou moins illuminer. </td></tr>
+    <tr><td class="paramname">darken_percent</td><td>Valeur entre 0 et 1 de l'illumination voulue pour la couleur.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a388163ed1df45cc4987dad689c1ec1f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a388163ed1df45cc4987dad689c1ec1f8">&#9670;&nbsp;</a></span>generate_image()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int generate_image </td>
+          <td>(</td>
+          <td class="paramtype">vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>pixels</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>pixels_illumination</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">map&lt; string, double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>context</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Cette fonction génère une image bianire en couleur à partir d'une liste de pixels et d'une liste de couleur. </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pixels</td><td>Vecteur qui contient la couleur des pixels. </td></tr>
+    <tr><td class="paramname">pixels_illumination</td><td>Vecteur dans lequel sont stocké les illuminations des pixels (0 = non illuminé, 1 = illuminé). </td></tr>
+    <tr><td class="paramname">context</td><td>Dictionnaire qui contient les données importantes (evite les variables globales). Ici cette fonction à besoin de :<ul>
+<li>nombre de pixels voulus (width,height)</li>
+<li>nombre de couleurs dans le color_map (nb_colors)</li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>
